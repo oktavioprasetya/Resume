@@ -1,1 +1,11 @@
-# Resume
+ My full name is Oktavio Prasetya Ananta, My nickname is Vio. I was born in Mojokerto on October 20 2009, I am 16 years old. I lived in Desa Ngastemi, Dusun Karangdami, Kecamatan Bangsal. I am the first child of three siblings. Now I live with my parents.
+
+ One of my strength is my willingnes to learn new things, especially in especially in technology and programming. I am also responsible when completing my school assigments. I always try to do my best and finish my homework on time. However, One of my weaknesses is that I lack confidence when speaking in front of many people. I am working on my public speaking skills by practicing more often.
+
+ My main hobby is listening to music because it helps me relax and reduce stress. I enjoy listening to music in my free time, especially after studying. Besides that, I am interested in technology, especially web development. I like learning how to create and improve websites. My hobbies and interests motivate me to keep developing my skills in the field of technology.
+
+ One of my past experiences was creating a website project for a school assignment. The website was about cleanliness and aimed to encourage people to keep their environment clean. I was responsible for designing and developing the website as part of the project. Through this experience, I improved my web development and problem-solving skills. This project increased my interest in becoming a web developer in the future.
+ 
+ As a Software Engineering student, I have learned the basics of programming and web development. I can create simple websites using HTML and CSS. I am also familiar with using computers and Microsoft Office applications for school assignments. I am able to work well with others and complete my tasks responsibly. I am always willing to learn new skills to improve my knowledge and abilities.
+
+ My career goal is to become a professional web developer in the future. I want to improve my programming and web development skills through continuous learning and practice. I also hope to gain valuable experience by working on real-world projects. After graduating, I plan to continue my education and build a successful career in the technology industry.
