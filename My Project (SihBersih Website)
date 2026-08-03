@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>SihBersih - Jasa Kebersihan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">SihBersih</div>
+    <ul class="menu">
+        <li>Home</li>
+        <li>Service</li>
+        <li>About</li>
+        <li>FAQ</li>
+        <li>Contact</li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-text">
+        <p>Hallo, pengguna</p>
+        <h1>Bersih profesional,<br>hasil maksimal</h1>
+        <p class="desc">
+            Layanan kebersihan cepat, aman, dan terpercaya
+            untuk kebutuhan harianmu.
+        </p>
+        <button class="btn">Pesan sekarang</button>
+    </div>
+
+    <div class="hero-img">
+        <img src="https://i.imgur.com/8QfQY9F.png" alt="Cleaning">
+    </div>
+</section>
+
+<!-- TOKO -->
+<section class="section">
+    <h2 class="section-title">Toko peralatan</h2>
+
+    <div class="product-list">
+        <div class="card">
+            <h3>Alat pel lantai</h3>
+            <p>Rp 175.000</p>
+            <button>Beli sekarang</button>
+        </div>
+
+        <div class="card">
+            <h3>Penyedot debu</h3>
+            <p>Rp 300.000</p>
+            <button>Beli sekarang</button>
+        </div>
+
+        <div class="card">
+            <h3>Robot Cleaner</h3>
+            <p>Rp 1.000.000</p>
+            <button>Beli sekarang</button>
+        </div>
+    </div>
+</section>
+
+<!-- LAYANAN -->
+<section class="section">
+    <h2 class="section-title">Layanan</h2>
+
+    <div class="service">
+        <div class="service-box">
+            <h3>Pembersih rumah</h3>
+            <p>Rumah bersih dan rapi dengan layanan profesional</p>
+            <button>Explore</button>
+        </div>
+
+        <div class="service-box">
+            <h3>Pembersih kantor</h3>
+            <p>Kantor lebih rapi dan nyaman untuk bekerja</p>
+            <button>Explore</button>
+        </div>
+    </div>
+</section>
+
+<!-- EDUKASI -->
+<section class="section">
+    <h2 class="section-title">Edukasi</h2>
+
+    <div class="edu">
+        <div class="edu-card">
+            <h3>Tips Rumah</h3>
+            <p>10 cara rahasia menjadikan rumah bersih</p>
+            <button>View more</button>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
