@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Form Registrasi</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(120deg, #4facfe, #00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CARD FORM */
+.form-box {
+    width: 360px;
+    background: rgba(255,255,255,0.95);
+    padding: 25px 28px;
+    border-radius: 14px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+    max-height: 440px;
+    overflow-y: auto;
+
+}
+
+/* SCROLLBAR */
+.form-box::-webkit-scrollbar {
+    width: 0px;
+}
+.form-box::-webkit-scrollbar-thumb {
+    background: #4facfe;
+    border-radius: 0px;
+}
+.form-box::-webkit-scrollbar-track {
+    background: #eaf4ff;
+}
+
+/* JUDUL */
+h2 {
+
+    top: 0;
+    background: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 18px;
+    color: #2f80ed;
+
+}
+
+/* LABEL */
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #555;
+}
+
+/* INPUT */
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline:#00f2fe;
+    border-color: #4facfe;
+    box-shadow: 0 0 0 3px rgba(79,172,254,0.25);
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* RADIO OPTION */
+.option {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: #555;
+}
+
+.option label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 11px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(to right, #4facfe, #2f80ed);
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0 8px 15px rgba(79,172,254,0.4);
+}
+
+/* RESET BUTTON */
+.reset-btn {
+    background: #e0e0e0;
+    color: #333;
+    margin-top: 10px;
+}
+
+.reset-btn:hover {
+    background: #cfcfcf;
+}
+
+/* FORM STATUS */
+#lanjutan,
+#berhasil {
+    display: none;
+}
+
+/* FORM BERHASIL */
+#berhasil {
+    text-align: center;
+    color: #27ae60;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- FORM 1 -->
+<div class="form-box" id="awal">
+<h2>Form Registrasi Akun</h2>
+
+<form onsubmit="return lanjut()">
+    <label>Username</label>
+    <input type="text" required>
+
+    <label>Password</label>
+    <input type="password" required>
+
+    <button type="submit">Lanjut</button>
+    <button type="reset" class="reset-btn">Reset</button>
+</form>
+</div>
+
+<!-- FORM 2 -->
+<div class="form-box" id="lanjutan">
+<h2>Form Data Diri</h2>
+
+<form onsubmit="return selesai()">
+
+    <label>Tanggal Lahir</label>
+    <input type="date" required>
+
+    <label>Kelas</label>
+    <select required>
+        <option value="">-- Pilih Kelas --</option>
+        <option>X</option>
+        <option>XI</option>
+        <option>XII</option>
+    </select>
+
+    <label>Jurusan</label>
+    <select required>
+        <option value="">-- Pilih Jurusan --</option>
+        <option>RPL</option>
+        <option>TKJ</option>
+        <option>PERHOTELAN</option>
+        <option>ANIMASI</option>
+        <option>DKV</option>
+        <option>KULINER</option>
+    </select>
+
+    <label>No HP</label>
+    <input type="tel" placeholder="08xxxxxxxxxx" required>
+
+    <label>Jenis Kelamin</label>
+    <div class="option">
+        <label><input type="radio" name="jk" required> Laki-laki</label>
+        <label><input type="radio" name="jk"> Perempuan</label>
+    </div>
+
+    <label>Hobi</label>
+    <textarea rows="2" placeholder="Contoh: Membaca, Coding"></textarea>
+
+    <label>Alamat</label>
+    <textarea rows="3"></textarea>
+
+    <button type="submit">Selesai</button>
+</form>
+</div>
+
+<!-- FORM 3 -->
+<div class="form-box" id="berhasil">
+<h2>Registrasi Berhasil</h2>
+<p>Data Anda telah berhasil disimpan.</p>
+<button onclick="ulang()">Registrasi Ulang</button>
+</div>
+
+<script>
+function lanjut() {
+    awal.style.display = "none";
+    lanjutan.style.display = "block";
+    return false;
+}
+
+function selesai() {
+    lanjutan.style.display = "none";
+    berhasil.style.display = "block";
+    return false;
+}
+
+function ulang() {
+    berhasil.style.display = "none";
+    awal.style.display = "block";
+}
+</script>
+
+</body>
+</html>
